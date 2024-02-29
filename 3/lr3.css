@@ -1,0 +1,61 @@
+/*общий стиль*/
+* {
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+/*стиль для кратинки*/
+.picture > img{
+    width: 120px;
+    height: 100px;
+}
+
+/*стили для заголовков*/
+.h1 {
+    color: red;
+}
+.h2 {
+    padding: 0;
+    color: white;
+    background-color: green;
+}
+.h22 {
+    padding-left: 4rem;
+    padding-top: 3rem;
+    height: 8rem;
+    color: white;
+    background-color: green;
+}
+
+/*стили для текста*/
+.txt1 {
+    padding: 0rem;
+    padding-bottom: 1rem;
+    width: 9.3rem;
+    color: white;
+    background-color: blue;
+    margin-bottom: 1rem;
+}
+.txt2 {
+    padding: 0;
+    color: red;
+}
+.txt3 {
+    padding-left: 4rem;
+}
+
+/*стиль для списка*/
+ul {
+    padding-left: 1rem;
+}
+li {
+    border: 0.1rem solid black; 
+}
