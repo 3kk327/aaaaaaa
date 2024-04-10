@@ -1,0 +1,39 @@
+.container{
+    width: 65em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    text-align: center;
+    padding: 8px;
+    cursor:grab;
+    margin: 0.5em;
+}
+
+.main-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    height: 15em;
+}
+.gameel{
+    text-align: center;
+    padding: 8px;
+    margin: 0.5em;
+    width: 8em;
+}
+.firstIn{
+    text-align: center;
+    padding: 8px;
+    margin: 0.5em;
+    width: 13em;
+}
+.firstOut{
+    text-align: center;
+    padding: 8px;
+    margin: 0.5em;
+}
