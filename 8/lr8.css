@@ -1,0 +1,227 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: ubuntu;
+}
+
+.cont_title1 {
+    background: rgb(194,224,255);
+    background: linear-gradient(180deg, rgb(120,187,255) 0%, 
+    rgba(85,141,213,1) 57%, rgb(65,151,238) 100%);
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.left_cont_title1 {
+    color: white;
+}
+.h2 {
+    padding-top: 1rem;
+    width: 20rem;
+}
+.txt1 {
+    width: 25rem;
+    margin-bottom: 3rem;
+}
+
+.button {
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(255,212,41);
+    margin-bottom: 3rem;
+    
+}
+.img_title {
+    
+    width: 22rem;
+}
+.cont_title2{
+    display: flex;
+    flex-direction: column;
+    width: 60em;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+.h22 {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+}
+.img_cont_title2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_info {
+    margin-bottom: 3rem;
+}
+
+.zagol_cont_title2 {
+    margin-top: 2rem;
+    font-weight: 700;
+    align-items: center;
+}
+
+.txt_cont_title2 {
+    margin-top: 2rem;
+}
+
+.forms_cont {
+    background-color: rgb(236,243,248);
+}
+
+.forms {
+    width: 15rem;
+    height: 18rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 2rem;
+}
+.filds {
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 2rem;
+    padding-left: 2rem;
+}
+.form_btn {
+    width: 17rem;
+    height: 3rem;
+    color: black;
+    background-color: rgb(255,212,41);
+    text-decoration: none;
+    border: 0;
+}
+
+.order-forms{
+    width: 80em;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.order-information{
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+}
+.ord-field{
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em;
+
+}
+.double-field{
+    height: 4em;
+}
+.double-ord-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10em;
+}
+.order-inp{
+    height: 2em;
+    width: 12.3em;
+}
+.form-btn-order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15em;
+    height: 3.5em;
+    background-color: rgb(255,212,41);
+    border: none;
+    margin-bottom: 5em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.ord-field-btn{
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.order-summary{
+    width: 25em;
+}
+#summary{
+    font-size: 20px;
+}
+
+#first_Check{
+    font-size: 20px;
+}
+#last_Check{
+    font-size: 20px;
+}
+#phone_Check{
+    font-size: 20px;
+}
+#dest_Check{
+    font-size: 20px;
+}
+.spanchrr{
+    width: 10em;
+}
+.inprr{
+    width: 10em;
+}
+.order-txt{
+    width: 15em;
+}
+#text_animation{
+    cursor: pointer;
+}
+
+.ftr {
+    background: rgb(194,224,255);
+    background: linear-gradient(180deg, rgb(30,89,156) 0%, 
+    rgba(85,141,213,1) 57%, rgb(99,196,252) 100%);
+    height: 8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/ /*для пк*/
+@media screen and (max-width: 1200px) 
+{
+    
+}
+/* Large devices (desktops, 992px and up)*/ /*для планшетов*/
+@media screen and (max-width: 992px) 
+{
+    .cont_title1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cont_title2{
+        width: 30em;
+    }
+    .img_cont_title2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+/* Medium devices (tablets, 768px and up)*/ /*для смартфонов-планшетов*/
+@media screen and (max-width: 768px) 
+{
+    
+}
+/*Small devices (landscape phones, 576px and up)*/ /*для смартфонов*/
+@media screen and (max-width: 576px) 
+{
+
+}

@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="lr8.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="cont_title1">
+            <div class="left_cont_title1">
+                <img src="logo.png" alt="" class="logo">
+                <h2 class="h2">
+                    С помощью нас вы сможете создать то, о чем
+                </h2>
+                <h1 class="h1">
+                    желаете!
+                </h1>
+                <div class="txt1">
+                    Наши возможности + опыт позволят Вам достичь огрмного 
+                    успеха. Мы верим в вас! И знаем это на все 100%. Вас 
+                    не остановить!
+                </div>
+                <a class="button" href="/">
+                    Узнать больше ...
+                </a> 
+            </div>
+            <span class="right_cont_title">
+                <img src="header-img.png" alt="" class="img_title">
+            </span>
+        </div>
+    </header>
+        <div class="cont_title2">
+            <h2 class="h22" id="text_animation">
+                Что Вам необходимо?
+            </h2>
+            <div class="img_cont_title2">
+                <div class="main_info">
+                    <img src="f3.png" alt="" class="img_1_cont_title2">
+                    <div class="zagol_cont_title2">Первый блок</div>
+                    <div class="txt_cont_title2">Там что-то написано, но я ничего не поняла(</div>
+                </div>
+                <div class="main_info">
+                    <img src="f4.png" alt="" class="img_2_cont_title2">
+                    <div class="zagol_cont_title2">Второй блок</div>
+                    <div class="txt_cont_title2">Там что-то написано, но я ничего не поняла(</div>
+                </div>
+                <div class="main_info">
+                    <img src="f5.png" alt="" class="img_3_cont_title2">
+                    <div class="zagol_cont_title2">Третий блок</div>
+                    <div class="txt_cont_title2">Там что-то написано, но я ничего не поняла(</div>
+                </div>
+            </div>    
+        </div>
+        <div class="forms_cont">
+            <h2 class="h22" id="ch_color_txt">Форма заказа обратного звонка</h2>
+            <form action="#" method="POST" class="forms">
+                <input class="filds" type="text" name placeholder="Имя">
+                <input class="filds" type="email" name placeholder="Введите свой E-mail">
+                <input class="filds" type="tel" name placeholder="Телефон">
+                <input class="filds" type="text" name placeholder="Какая тема Вас интересует?">
+                <button type="reset" class="form_btn">Отправить вопрос!</button>
+            </form>
+        </div>
+        <div class="forma-validat">
+            <div class="order-forms">
+                <form class="order-information">
+                    <h2>Информация о заказе</h2>
+                    <div class="ord-field">
+                        <div class="order-txt" >Имя:</div>
+                        <div class="inprr"><input type="text" class="order-inp" id="first"  onblur="checkFirst();" required></div>
+                        <div class="spanchrr"><span id="first_Check"></span></div>
+                        
+                    </div>
+                    <div class="ord-field">
+                        <div class="order-txt" >Фамилия:</div>
+                        <div class="inprr"><input type="text" class="order-inp" id="last" onblur="checkLast();" required ></div>
+                        <div class="spanchrr"><span id="last_Check"></span></div>
+                        
+                    </div>
+                    <div class="ord-field">
+                        <div class="order-txt">Номер телефона:</div>
+                        <div class="inprr"><input class="order-inp" placeholder="XXX-XXX-XXX"  id="phone" type="text" onblur="checkPhone();"></div>
+                        <div class="spanchrr"><span id="phone_Check"></span></div>
+                        
+                    </div>
+                    <div class="ord-field">
+                        <div class="order-txt" >Адрес:</div>
+                        <div class="inprr"><input type="text" class="order-inp" id="dest" onblur="checkDest();" required></div>
+                        <div class="spanchrr"><span id="dest_Check"></span></div>
+                        
+                    </div>
+                    <div class="ord-field double-field">
+                        <div class="order-txt">Дата и время:</div>
+                        <div class = "double-ord-field">
+                            <input type="date" id="date" class="order-inp" required>
+                            <input type="time" id="time" class="order-inp" required>
+                        </div>
+                        <div class="spanchrr"></div>
+                    </div>
+                    <div class="ord-field">
+                        <div class="order-txt">Количество пассажиров:</div>
+                        <div class="inprr"><input class="order-inp" id="quantity" type="number" min="1" max="4" required></div>
+                        <div class="spanchrr"></div>
+                    </div>
+                    <div class="ord-field">
+                        <div class="order-txt">Способ оплаты:</div>
+                        <select class="form-control" name="paymethod" id="paymethod" required>
+                            <option>Наличные</option>
+                            <option>Карта</option>
+                            <option>PayPal</option>
+                        </select>
+                        <div class="spanchrr"></div>
+                    </div>
+                    <div class="ord-field-btn" >
+                        <div class="form-btn-order" type="post" id="sendOrder" onclick="outputData();">Заказать!</div>
+                    </div>
+                </form>
+                <div class="order-summary">
+                    <h2>Ваш заказ:</h2>
+                    <span id="summary"></span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="ftr">
+                @ Все на этом сайте защищено
+            </div>
+        </footer>
+        <script src="lr8.js"></script>
+</body>
+</html>
