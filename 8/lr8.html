@@ -71,55 +71,46 @@
             <div class="order-forms">
                 <form class="order-information">
                     <h2>Информация о заказе</h2>
-                    <div class="ord-field">
-                        <div class="order-txt" >Имя:</div>
-                        <div class="inprr"><input type="text" class="order-inp" id="first"  onblur="checkFirst();" required></div>
-                        <div class="spanchrr"><span id="first_Check"></span></div>
-                        
-                    </div>
-                    <div class="ord-field">
-                        <div class="order-txt" >Фамилия:</div>
-                        <div class="inprr"><input type="text" class="order-inp" id="last" onblur="checkLast();" required ></div>
-                        <div class="spanchrr"><span id="last_Check"></span></div>
-                        
-                    </div>
-                    <div class="ord-field">
-                        <div class="order-txt">Номер телефона:</div>
-                        <div class="inprr"><input class="order-inp" placeholder="XXX-XXX-XXX"  id="phone" type="text" onblur="checkPhone();"></div>
-                        <div class="spanchrr"><span id="phone_Check"></span></div>
-                        
-                    </div>
-                    <div class="ord-field">
-                        <div class="order-txt" >Адрес:</div>
-                        <div class="inprr"><input type="text" class="order-inp" id="dest" onblur="checkDest();" required></div>
-                        <div class="spanchrr"><span id="dest_Check"></span></div>
-                        
-                    </div>
-                    <div class="ord-field double-field">
-                        <div class="order-txt">Дата и время:</div>
-                        <div class = "double-ord-field">
-                            <input type="date" id="date" class="order-inp" required>
-                            <input type="time" id="time" class="order-inp" required>
+                    <div class="column_form">
+                        <div class="colunm_info">
+                            <div class="order-txt" >Имя:</div>
+                            <div class="order-txt" >Фамилия:</div>
+                            <div class="order-txt">Номер телефона:</div>
+                            <div class="order-txt" >Адрес:</div>
+                            <div class="order-txt data_txt">Дата и время:</div>
+                            <div class="order-txt">Количество пассажиров:</div>
+                            <div class="order-txt">Способ оплаты:</div>
                         </div>
-                        <div class="spanchrr"></div>
+                        <div class="colunm_info">
+                            <div class="inp_marg"><input type="text" class="order-inp" id="first"  onblur="checkFirst();" required></div>
+                            <div class="inp_marg"><input type="text" class="order-inp" id="last" onblur="checkLast();" required ></div>
+                            <div class="inp_marg"><input class="order-inp" placeholder="XXX-XXX-XXX"  id="phone" type="text" onblur="checkPhone();"></div>
+                            <div class="inp_marg"><input type="text" class="order-inp" id="dest" onblur="checkDest();" required></div>
+                            <div class="inp_marg"><div class = "double-ord-field"></div>
+                                <input type="date" id="date" class="order-inp" required>
+                                <input type="time" id="time" class="order-inp" required>
+                            </div>
+                            
+                            <div class="inp_marg"><input class="order-inp" id="quantity" type="number" min="1" max="4" required></div>
+                            <div class="inp_marg">
+                                <select class="form-control" name="paymethod" id="paymethod" required>
+                                    <option>Наличные</option>
+                                    <option>Карта</option>
+                                    <option>PayPal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="colunm_info">
+                            <div class="column_span"><span id="first_Check"></span></div>
+                           <div class="column_span"><span id="last_Check"></span></div>
+                            <div class="column_span"><span id="phone_Check"></span></div>
+                            <div class="column_span"><span id="dest_Check"></span></div>
+                            <div class="ord-field-btn" >
+                                <div class="form-btn-order" type="post" id="sendOrder" onclick="outputData();">Заказать!</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ord-field">
-                        <div class="order-txt">Количество пассажиров:</div>
-                        <div class="inprr"><input class="order-inp" id="quantity" type="number" min="1" max="4" required></div>
-                        <div class="spanchrr"></div>
-                    </div>
-                    <div class="ord-field">
-                        <div class="order-txt">Способ оплаты:</div>
-                        <select class="form-control" name="paymethod" id="paymethod" required>
-                            <option>Наличные</option>
-                            <option>Карта</option>
-                            <option>PayPal</option>
-                        </select>
-                        <div class="spanchrr"></div>
-                    </div>
-                    <div class="ord-field-btn" >
-                        <div class="form-btn-order" type="post" id="sendOrder" onclick="outputData();">Заказать!</div>
-                    </div>
+                    
                 </form>
                 <div class="order-summary">
                     <h2>Ваш заказ:</h2>

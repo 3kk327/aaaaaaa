@@ -100,6 +100,18 @@ body {
     border: 0;
 }
 
+
+
+.form-control{
+    height: 3em;
+    width: 12.8em;
+}
+.colunm_info{
+    display: flex;
+    flex-direction: column;
+    height: 30em;
+    width: 20em;
+}
 .order-forms{
     width: 80em;
     display: flex;
@@ -108,8 +120,23 @@ body {
 }
 .order-information{
     width: 50em;
+
+}
+.inp_marg{
+    margin-top: 1.2em;
+    width: 15em;
+}
+.data_txt{
+    height: 3em;
+}
+.column_span{
+    width: 15em;
+    height: 2em;
+    margin-top:1.2em;
+}
+.column_form{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 .ord-field{
     height: 2em;
@@ -169,14 +196,10 @@ body {
 #dest_Check{
     font-size: 20px;
 }
-.spanchrr{
-    width: 10em;
-}
-.inprr{
-    width: 10em;
-}
 .order-txt{
     width: 15em;
+    margin-top: 2em;
+    
 }
 #text_animation{
     cursor: pointer;
