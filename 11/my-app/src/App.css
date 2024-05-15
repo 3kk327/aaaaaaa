@@ -1,0 +1,70 @@
+.main_block{
+  width: 20em;
+  height: 45em;
+  background-color: rgb(240, 236, 231);
+  margin: 10em auto;
+  border: solid 2px;
+  border-radius: 10px;
+  border-color: rgb(218, 214, 211);;
+}
+.pizza_width{
+  display: block; 
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+.top_season{
+  position: absolute;
+  background-color: orange;
+  color: white;
+  margin-top: 2em;
+  padding-left: 1em;
+  width: 6em;
+  height: 1.5em;
+  text-align: center;
+}
+.bottom{
+  padding-left: 1em;
+}
+h1{
+  margin-bottom: 0.3em;
+}
+p{
+  font-size: 15px;
+}
+.pizza_diam{
+  border-color: rgb(218, 214, 211);
+  border-radius: 10px;
+  border: solid 2px;
+  padding: 0.3em 1.3em 0.3em 0.7em;
+  font-size: larger;
+  color: gray;
+  margin-bottom: 0;
+  background-color: rgb(240, 236, 231);
+}
+.pizza_count{
+  margin-top: 1em;
+  display: flex;
+  width: 5em;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.znaki{
+  font-size: 25px;
+}
+.korzina_img{
+  width: 3em;
+  height: 2.5em;
+  border-radius: 3px;
+}
+.buy_poz{
+  display: flex;
+}
+.btn_magazi{
+  margin-top: 1.7em;
+  margin-left: 2em;
+  width: 3em;
+  height: 2.5em;
+  background-color: none;
+  border: none;
+}
