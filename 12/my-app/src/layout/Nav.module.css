@@ -1,0 +1,48 @@
+.Head_style{
+    padding-left: 10em;
+    padding-right: 10em;
+    display: flex;
+    justify-content: space-between;
+}
+.a_href{
+    color: black;
+    text-decoration: none;
+}
+.atribute{
+    justify-content: space-between;
+    padding-top: 2em;
+    width: 30em;
+    display: flex;
+    
+
+}
+.buttons{
+    width: 22em;
+    justify-content: space-between;
+    padding-top: 1em;
+    display: flex;
+    
+}
+.button2{
+    color: white;
+    height: 3em;
+    padding-top: 0.8em;
+    border: none;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: rgb(62, 25, 228);display: flex;
+    width: 12em;
+   
+}
+.button1{
+    background-color: rgb(252, 155, 64);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 12em;
+    height: 3em;
+    padding-top: 0.8em;
+    border: none;
+    border-radius: 5px;
+    
+}
